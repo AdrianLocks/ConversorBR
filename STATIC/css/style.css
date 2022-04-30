@@ -342,9 +342,9 @@ a{
   background-repeat: no-repeat;
   
 }
-/* responsividade(tablets)*/
+/* responsividade MIN (tablets)*/
 
-@media(min-width: 992px){
+@media(min-width: 768px){
 
 
 
@@ -431,9 +431,9 @@ a{
 
 
 
-/* responsive 991px(tablets)*/
+/* responsive MAX (tablets)*/
 
-@media(max-width: 991px){
+@media(max-width: 1023px){
 
 
 	.home-section{
@@ -523,7 +523,7 @@ a{
 }
 /* responsivo celular                                               ----------------------- Celular------------------------     */
 
-@media(max-width: 440px){
+@media(max-width: 767px){
 	
 	
 	/*home section*/
