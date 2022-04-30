@@ -524,6 +524,11 @@ a{
 /* responsivo celular                                               ----------------------- Celular------------------------     */
 
 @media(max-width: 440px){
+	
+	*{
+           box-sizing: border-box;
+           margin:0;
+           background-position: center;
 
 	/*home section*/
 
