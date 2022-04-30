@@ -534,7 +534,7 @@ a{
   
 
    .home-section .container{
-     position: inherit;
+     background-position: inherit;
      display: table-cell;
      vertical-align: middle; 
      margin:auto;
