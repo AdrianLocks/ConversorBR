@@ -525,26 +525,24 @@ a{
 
 @media(max-width: 440px){
 	
-	*{
-           box-sizing: border-box;
-           margin:0;
-           background-position: center;
-
+	
 	/*home section*/
 
    .container{
+	box-sizing: border-box;
         background-position: center;
-	margin:auto;
+	margin:0;
 	margin-left:auto;
 	margin-right: auto;
    }
   
 
    .home-section .container{
+     box-sizing: border-box;
      background-position: center;
      display: table-cell;
      vertical-align: middle; 
-     margin:auto;
+     margin:0;
      margin-right: 5px;
      margin-left: 10px;
      margin-top:120px;
