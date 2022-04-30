@@ -4,7 +4,7 @@
 
 body{
 
-	
+	background-position:center;
 	
 	line-height: 1.5;
 	font-family: 'Raleway', sans-serif;
@@ -238,10 +238,10 @@ a{
   }}
 
 
-/*header*/
+/*header                                                         ................  */                
 .header{
 	position: center;
-	width: 100%;
+	width: 110%;
 	left:0;
 	top:0;
 	z-index: 99;
