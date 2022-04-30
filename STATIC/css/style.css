@@ -675,7 +675,7 @@ a{
 	.container{
 		background-position: center;
 		position: center;
-		max-width: 440px;
+		max-width: 767px;
 		margin:auto;
 		background-image:var(--primary-color);
 		background-repeat: no-repeat;
