@@ -238,7 +238,7 @@ a{
   }}
 
 
-/*header                                                         ................  */                
+/*header                                                         ................ NavBar.................  */                
 .header{
 	position: center;
 	width: 100%;
@@ -256,7 +256,7 @@ a{
 	border-radius: 4px;
 }
 .header .logo{
-  
+        image-rendering:optimizeQuality;
 	padding: 0 15px;
 }
 .header .logo a{
@@ -520,7 +520,7 @@ a{
 
 	
 }
-/* responsivo celular                                               -----------------------      */
+/* responsivo celular                                               ----------------------- Celular------------------------     */
 
 @media(max-width: 440px){
 
@@ -545,6 +545,7 @@ a{
   
    }
    .home-section  img{
+    position:center;
     margin-left: 441px;
     margin-top: 130px;
   
@@ -563,7 +564,7 @@ a{
 	background-repeat:no-repeat;
    }
    .frase1 {
-	  
+	  text-align:center;
 	  font-size: 18px;
 	  font-style:initial;
   
@@ -589,7 +590,7 @@ a{
 		border-radius: 4px;
 	}
 	.header .logo{
-	  
+	        image-rendering:optimizeQuality;
 		padding: 0 15px;
 	}
 	.header .logo a{
