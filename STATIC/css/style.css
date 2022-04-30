@@ -534,13 +534,13 @@ a{
   
 
    .home-section .container{
-
-    display: table-cell;
-    vertical-align: middle; 
-    margin:auto;
-	margin-right: 5px;
-    margin-left: 10px;
-	margin-top:120px;
+     position: inherit;
+     display: table-cell;
+     vertical-align: middle; 
+     margin:auto;
+     margin-right: 5px;
+     margin-left: 10px;
+     margin-top:120px;
   
    }
    .home-section  img{
