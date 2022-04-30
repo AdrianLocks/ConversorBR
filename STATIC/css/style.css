@@ -15,7 +15,8 @@ body.hidden-scrolling{
 }
 *{
   box-sizing: border-box;
-	margin:10;
+  margin:0;
+  background-position: center;
 }
 
 /*home section*/
