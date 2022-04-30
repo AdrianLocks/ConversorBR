@@ -535,17 +535,17 @@ a{
 
    .home-section .container{
 
-    display: table-cell;
-    vertical-align: middle; 
-    margin:auto;
-	margin-right: 5px;
-    margin-left: 10px;
-	margin-top:120px;
+     display: table-cell;
+     vertical-align: middle; 
+     margin:auto;
+     margin-right: 5px;
+     margin-left: 10px;
+     margin-top:120px;
   
    }
    .home-section  img{
-    margin-left: 441px;
-    margin-top: 130px;
+     margin-left: 441px;
+     margin-top: 130px;
   
    }
    .home-section{
