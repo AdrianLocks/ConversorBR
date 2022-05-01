@@ -108,7 +108,7 @@ a{
   .container .money-img {
 	  position: center;
 	  margin: center;
-	  margin-top: 20%;
+	  margin-top: 10%;
     align-content: center;
     margin-left: 150px;
     width: 120px;
@@ -712,8 +712,11 @@ a{
 	  }
 	  
 	  .container .money-img {
+		  position: center;
+	          margin: center;
+	          margin-top: 20%;
 		align-content: center;
-		margin-left: 155px;
+		margin-left: 150px;
 		width: 120px;
 		
 	  }
