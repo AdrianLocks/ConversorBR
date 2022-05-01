@@ -532,9 +532,16 @@ a{
 	/*home section*/
 
    .container{
-	   zoom:0;
+	
+	
+	position: center;
+	max-width: 767px;
+	
+	background-image:var(--primary-color);
+	background-repeat: no-repeat;
+	zoom:0;
 	box-sizing: border-box;
-        background-position: center;
+	background-position: center;
 	margin:0;
 	margin-left:auto;
 	margin-right: auto;
@@ -677,15 +684,8 @@ a{
 	.header .open-nav-menu{
 		display: flex;
 	}
-	.container{
-		background-position: center;
-		position: center;
-		max-width: 767px;
-		margin:auto;
-		background-image:var(--primary-color);
-		background-repeat: no-repeat;
+	
 		
-	}
 
 	p{
 		text-align: center;
