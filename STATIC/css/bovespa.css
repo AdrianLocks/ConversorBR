@@ -1033,7 +1033,7 @@ a{
 	box-shadow: 0 2px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     }
 	
-	 /*--bovespa-section--               CRIAR O BOVESPA SECTION NAS OUTRAS OPCOES DE RESPONSIVIDADE*/
+	 /*--bovespa-section-- celular              CRIAR O BOVESPA SECTION NAS OUTRAS OPCOES DE RESPONSIVIDADE*/
 
 	#container {
 		flex: 1 0 auto; 
@@ -1072,7 +1072,7 @@ a{
 		position: center;
 		margin-top: 5%;
 		padding: 10px 10px 10px 10px;
-		width: 105%;	
+		width: 115%;	
 		border: 1px solid #000;
 		
 	}
