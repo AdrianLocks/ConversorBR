@@ -16,7 +16,7 @@
   <!-- header start -->
   
   <header class="header">
-     <div class="container">
+      <div class="container">
         <div class="header-main">
            <div class="logo">
               
@@ -65,7 +65,7 @@
            </nav>
            <!-- navigation menu end -->
         </div>
-     </div>
+      </div>
   </header>
   <!-- header end -->
 
@@ -90,8 +90,9 @@
 		<div id="search">
          
 			<form class="d-flex" action="" method="POST" id="myForm">
-			  <input class="form-control me-2 input-width" type="search" id="txtSymbol" placeholder="PETR4.SA" aria-label="Search" value="PETR4.SA" checked>
-          
+            <input class="form-control me-2 input-width" type="search" id="txtSymbol" placeholder="PETR4.SA" aria-label="Search" value="PETR4.SA"  checked/>
+            
+            <input  class="form-control me-3 input-width2" style="background-color:#DBDBDB"  id="txtSymbol" type="text" value="" placeholder="" aria-label="Search" checked />
 			  <button class="btn btn-success" type="button" value= "enviar" id= "send" onclick="validar()">Pesquisar</button>
 			</form>		
 		</div>
@@ -167,9 +168,11 @@
  
 
 <!-- Inclusão dos scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script type="text/javascript" src="STATIC/js/alphavantage.js"></script>			
 <script type="text/javascript" src="STATIC/js/bootstrap.min.js"></script>
 <script src="STATIC/js/script2.js"></script>
-<script src="STATIC/js/enter.js"><script>
+<script src="STATIC/js/enterButton.js"><script>
+<script src="STATIC/js/enterInput.js"><script>
 </body>
 </html>
