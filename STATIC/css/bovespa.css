@@ -4,7 +4,7 @@
 
 body{
 
-	background-position:auto;
+	background-position: center;
 	width: auto;
 	margin-right: 2px;
 	margin-left: 2px;
@@ -13,14 +13,14 @@ body{
 	font-weight: 400;
 }
 body.hidden-scrolling{
+
+	overflow-x: hidden;
 	
-	
-	overflow-y: hidden;
 }
 *{
 	
   box-sizing:border-box;
-	margin:auto;
+	margin:0;
 	background-position: center;
 }
 
@@ -83,10 +83,10 @@ a{
   }
   
   
- /* * {
+  * {
     
     box-sizing: border-box;
-  }*/
+  }
   
   p{
     text-align: center;
@@ -220,8 +220,15 @@ a{
 /*header                                             navBar ............... */
 
 
+.header{
+	position: center;
+	width: 100%;
+	left:0;
+	top:0;
+	z-index: 99;
+	padding: 15px;
+}
 .header-main{
-	
 	
 	background-color: #ffffff;
 	display: flex;
@@ -230,6 +237,8 @@ a{
 	padding: 20px 0;
 	border-radius: 4px;
 }
+	
+	
 
 .header-main .logo{
 	
@@ -317,7 +326,18 @@ a{
 	opacity:0;
 	visibility: hidden;
 }
+.home-section{
+  
 
+	width: 100%;
+	display:inline-flex;
+	min-height: 100vh;
+	background-color:rgba(128, 128, 128, 0.13);
+	background-position: center;
+	background-size: cover;
+  background-repeat: no-repeat;
+  
+}
 
 
 /*                                           ----------bovespa-section   ----------                            */
@@ -348,7 +368,7 @@ a{
 }
 .input-width2{  
 	border: 1px transparent;            /* input 2  oculto , so funciona o enter no input 1 com o input 2!?bug */
-	width: 0px !important;
+	
 	color: #DBDBDB;
 	width: 0px !important;
 	opacity:0.65;
@@ -597,6 +617,7 @@ a{
 /* responsive MAX (tablets)*                alterando!*/
 
 @media(max-width: 1023px){
+    
 
 	/*home section*/
 
