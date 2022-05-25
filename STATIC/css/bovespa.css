@@ -13,9 +13,12 @@ body{
 	font-weight: 400;
 }
 body.hidden-scrolling{
+	
+	
 	overflow-y: hidden;
 }
 *{
+	
   box-sizing:border-box;
 	margin:auto;
 	background-position: center;
@@ -25,7 +28,7 @@ body.hidden-scrolling{
 
 .home-section{
 	
-  
+      
 	  width: auto;
 	  display: block;
 	  min-height: 100vh;
@@ -44,7 +47,7 @@ body.hidden-scrolling{
 
 .home-section .container{
 
-   
+    
 	margin-right: auto;
     margin-left: auto;
 	margin-top:120px;
@@ -58,9 +61,11 @@ body.hidden-scrolling{
 }
 
 .container{
+	
 	max-width: 1420px;
 	margin:auto;
-	margin-left: auto;
+	margin-left:auto;
+	
 	
 }
 ul{
@@ -78,10 +83,10 @@ a{
   }
   
   
-  * {
+ /* * {
     
     box-sizing: border-box;
-  }
+  }*/
   
   p{
     text-align: center;
@@ -94,13 +99,6 @@ a{
     color:var(--primary-color);
   }
   
-  .container-ch h6 {
-	  text-align:center;
-
-	 
-
-	
-}
   
   p {
     text-align: center;
@@ -118,7 +116,7 @@ a{
   .container .money-img {
 	  position: center;
 	  margin: center;
-	  margin-top: 20%;
+	  margin-top: 10%;
     align-content: center;
     margin-left: 150px;
     width: 120px;
@@ -217,60 +215,24 @@ a{
 
   /*--endbuttons--*/
  
-  @media (max-width: 991px) {
-    .container-cv {
-      right: 300px;
-      width: 200px;
-    }
-    .currency input {
-      width: 200px;
-      border: 0;
-    background: transparent;
-    font-size: 20px;
-    text-align: center;
-    }
-    .money-img {
-      align-content: center;
-      margin-left: 145px;
-      
-      width: 100px;
-    }
-
-    h1 {
-      font-size: small;
-      text-align:center;
-      
-     
-      position: center;
-      color:var(--primary-color);
-      }
-      
-      p {
-        font-size: small;
-        text-align: center;
-  
-  }}
-
+ 
 
 /*header                                             navBar ............... */
-.header{
-	position: center;
-	width: 100%;
-	left:0;
-	top:0;
-	z-index: 99;
-	padding: 15px;
-}
+
+
 .header-main{
+	
+	
 	background-color: #ffffff;
 	display: flex;
 	justify-content:space-between;
-	align-items: center;
+	align-items: left;
 	padding: 20px 0;
 	border-radius: 4px;
 }
 
 .header-main .logo{
+	
 	image-rendering:optimizeQuality;      /* new*/
 	align-items: left;
 	align-content: left;
@@ -278,7 +240,8 @@ a{
 }
 
 .header .logo{
-	
+	position:left;
+	align-items:left;
 	image-rendering:optimizeQuality;
 	
   
@@ -355,20 +318,9 @@ a{
 	visibility: hidden;
 }
 
-.home-section{
-  
 
-	width: 100%;
-	display:inline-flex;
-	min-height: 100vh;
-	background-color:rgba(128, 128, 128, 0.13);
-	background-position: center;
-	background-size: cover;
-  background-repeat: no-repeat;
-  
-}
 
-                                             /*----------bovespa-section----------*/
+/*                                           ----------bovespa-section   ----------                            */
 #container {
 	
 	flex: 1 0 auto; 
@@ -377,6 +329,7 @@ a{
 
 
 #search {
+	
 	margin-top:-120px;
 	padding: 10px 0px 10px 20px;
 	background-color: #DBDBDB;	
@@ -389,9 +342,19 @@ a{
 	display: none;
 }
 
-.input-width {
+.input-width {       /* input  1 */
 	
-	width: 180px !important;
+	width: 150px !important;
+}
+.input-width2{  
+	border: 1px transparent;            /* input 2  oculto , so funciona o enter no input 1 com o input 2!?bug */
+	width: 0px !important;
+	color: #DBDBDB;
+	width: 0px !important;
+	opacity:0.65;
+    -moz-opacity: 0.65;
+    filter: alpha(opacity=65);
+
 }
 
 #wrapper {
@@ -427,21 +390,58 @@ a{
 
 
 .line-chart {
-	position:center;
+	position:relative;  /*  nao mudar */
 	width: 300px;	
 	height: 300px;	
 	border: 1px solid #000;
-	padding: 10px 10px 10px 10px;
+	padding: 15px 0px 15px 0px;
 	margin: 20px 20px 20px 20px;
 }
-                                     /*--------------fim-Bovespa-section------------*/
-                                                        
+/*--------------                        fim-Bovespa-section               ------------*/
+
+
+/*---------------------------- responsividade MAX tablets/dekstops 991px---------------------- */
+
+@media (max-width: 991px) {
+    .container-cv {
+      right: 300px;
+      width: 200px;
+    }
+    .currency input {
+      width: 200px;
+      border: 0;
+    background: transparent;
+    font-size: 20px;
+    text-align: center;
+    }
+    .money-img {
+      align-content: center;
+      margin-left: 145px;
+      
+      width: 100px;
+    }
+
+    h1 {
+      font-size: small;
+      text-align:center;
+      
+     
+      position: center;
+      color:var(--primary-color);
+      }
+      
+      p {
+        font-size: small;
+        text-align: center;
+  
+  }}
+                                                       
 														
-/* responsividade MIN( DEKSTOP / tablets)*/
+    /*                        responsividade MIN( DEKSTOP / tablets)              */
 
 @media(min-width: 768px){
 
-
+  
 
   .header .menu > .menu-item-has-children:hover > .sub-menu{
 	transform: translateY(0);
@@ -451,7 +451,7 @@ a{
   .header .menu > .menu-item-has-children:hover > a .plus:after{
     transform: translate(-50%,-50%) rotate(0deg);		
   }
-  }
+  } /* nao alterar a chave */
   .header .menu > .menu-item > .sub-menu > .menu-item{
 	display: block;
   }
@@ -523,6 +523,8 @@ a{
   }
                /* -----------------------------BOVESPA SECTION DEKSTOP/ TABLET -------------------------*/
 #container {
+	                           
+    
 	flex: 1 0 auto; 
 	padding-bottom: 20px;	
 }
@@ -541,7 +543,17 @@ a{
 }
 
 .input-width {
-	width: 180px !important;
+	width: 130px !important;
+}
+
+.input-width2{              /* input 2  oculto , so funciona o enter no input 1 com o input 2!?bug */
+	border: 1px transparent;
+	background-color: #DBDBDB;
+	width: 0px !important;
+	opacity:0.65;
+	-moz-opacity: 0.65;
+	filter: alpha(opacity=65);
+		
 }
 
 #wrapper {
@@ -582,33 +594,505 @@ a{
 
 
 
-/* responsive MAX (tablets)*/
+/* responsive MAX (tablets)*                alterando!*/
 
 @media(max-width: 1023px){
 
+	/*home section*/
 
-	.home-section{
-  
-
-		width: 260%;
-		display:inline-flex;
+	.container{
+	    
+		width: 100%;
+		position: center;
+		max-width: 100%;      /* -----------largura do container...tambem altera o NAV -------------*/
+		
+		background-image:var(--primary-color);
+		background-repeat: repeat;  /* a */
+		zoom:0;
+		box-sizing: border-box;
+		background-position:center;
+		margin:0;
+		margin-left:auto;
+		margin-right: auto;
+	   }
+	  
+	
+	   .home-section .container{
+	   
+		zoom: 0;
+		box-sizing: border-box;
+		background-position: center;
+		display:table-cell;
+		vertical-align: middle; 
+		margin:0;
+		margin-right: 5px;
+		margin-left: 5px;
+		margin-top:120px;
+	  
+	   }
+	   .home-section  img{
+		position:center;
+		margin-left: 441px;
+		margin-top: 130px;
+	  
+	   }
+	   .home-section{                       /*----------------------------*/
+		
+		
+		margin-right: 0%;
+		margin-left: 0%;
+		zoom: 0;
+		width: 100%;       /*   ---------- largura  do body -1023px-----------  */
+		display: table;
+		
 		min-height: 100vh;
 		background-color:rgba(128, 128, 128, 0.13);
 		background-position: center;
-		background-size: cover;
-	  background-repeat: no-repeat;
+		background-size:cover;
+		background-repeat:no-repeat;
+	   }
+	   .frase1 {
+		  text-align: center;
+		  font-size: 18px;
+		  font-style:initial;
 	  
+	   }
+	  
+		
+		.header{
+			margin-left: auto;
+			margin-right: auto;
+			
+			width: 100%;            /* ------largura navBAR------------*/
+			left: 0;
+			top:0;
+			z-index: 99;
+			padding: 0 0 0 0;
+		}
+		.header-main{
+			background-color: #ffffff;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 40px 0;       /*---- ALTURA NAVBAR-----*/
+			border-radius: 4px;
+		}
+	
+		.header-main .logo{
+			position:left;
+			image-rendering:optimizeQuality;  /* new- tentando colocar logo a esquerda! */
+			align-items: auto;
+			align-content:auto ;
+		}
+	
+		.header .logo{
+			position:center;
+			image-rendering:optimizeQuality;
+			padding: 0 15px ;
+		}
+		.header .logo a{
+			position:center;
+			font-size: 30px;
+			text-transform: capitalize;
+			color:  rgb(48, 165, 48);
+			font-weight: 600;
+		}
+		.header .menu-overlay.active{
+		visibility: visible;
+		opacity: 1;
+		}
+		.header .nav-menu{
+			position: absolute;    /*-----*/
+			right: -290px;
+			visibility: hidden;
+			width: 300px;
+			height: 100%;
+			top:0;
+			overflow-y: auto;
+			background-color: #222222;
+			z-index: 1000;
+			padding: 15px 0;
+			transition: all 0.5s ease;
+		}
+		.header .nav-menu.open{
+			visibility: visible;
+			right: 10px;
+		}
+		.header .menu > .menu-item{
+			display: block;
+			margin:0;
+		}
+		.header .menu > .menu-item-has-children > a{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.header .menu > .menu-item > a{
+			color: #ffffff;
+			padding: 12px 15px;
+			border-bottom: 1px solid #333333;
+		}
+		.header .menu > .menu-item:first-child > a{
+			border-top: 1px solid #333333;	
+		}
+		.header .menu > .menu-item > a .plus:before, 
+		.header .menu > .menu-item > a .plus:after{
+			background-color: #ffffff;
+		}
+		.header .menu > .menu-item-has-children.active > a .plus:after{
+			transform: translate(-50%,-50%) rotate(0deg);
+		}
+		.header .menu > .menu-item > .sub-menu{
+			width: 100%;
+			position: relative;
+			opacity: 1;
+			visibility: visible;
+			border:none;
+			background-color: transparent;
+			box-shadow: none;
+			transform: translateY(0px);
+			padding: 0px;
+			left: auto;
+			top:auto;
+			max-height: 0;
+			overflow: hidden;
+		}
+		.header .menu > .menu-item > .sub-menu > .menu-item > a{
+			padding: 12px 45px;
+			color: #ffffff;
+			border-bottom: 1px solid #333333;
+		}
+		.header .close-nav-menu,
+		.header .open-nav-menu{
+			display: flex;
+		}
+		
+			
+			
+	
+		p{
+			text-align: center;
+			position: center;
+		  }
+		  
+		  h1 {
+			text-align: center;
+			position: center;
+			color:var(--primary-color);
+		  }
+		  
+		  .container-cv h6 {
+		
+			
+			text-align:left;                  
+			
+		   }
+		  p {
+			text-align: center;
+		  }
+		  
+		  .btn {
+			color: #fff;
+			background: var(--primary-color);
+			cursor: pointer;
+			border-radius: 2px;
+			font-size: 14px;
+			padding: 5px 12px;
+		  }
+		  
+		  .container .money-img {
+			 position: center;
+			 margin: center;
+			 margin-top: 20%;
+			align-content: center;
+			zoom: 0;
+			width: 120px;
+			
+		  }
+		
+		  .container-cv {
+			 
+			
+			margin-top: auto; /* -110*/
+			margin-left: auto; /*450px*/
+			position: center;
+			padding: 300px ;
+			
+			
+			
+		  }
+		
+		  
+		  .currency {
+		
+		   
+			padding: 40px 0;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		  }
+		  
+		  .currency select {
+			margin-left:5px;
+			 margin-right: 0px;
+			padding: 10px 0px 10px 10px;
+			-moz-appearance: none;
+			-webkit-appearance: none;
+			appearance: none;
+			border: 2px solid #dedede;
+			font-size: 16px;
+			background: transparent;
+			background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%20000002%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
+			background-position: right 10px top 50%, 0, 0;
+			background-size: 12px auto, 100%;
+			background-repeat: no-repeat;
+		  }
+		  
+		  .currency input {
+			
+			margin-right:-20px;
+			border: 0;
+			background: transparent;
+			font-size: 20px;
+			text-align:center;
+		  }
+		  
+		  .swap-rate-container {
+			
+			margin-left: 13px;
+			margin-right: 33px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		  }
+		  
+		  .rate {
+			color: rgba(48,165,48);
+			font-size: 20px;
+			padding:  1 10px;
+		  }
+		  
+		  select:focus,
+		  input:focus,
+		  button:focus {
+			outline: 0;
+		  }
+		 /*--buttons--*/
+		
+		 
+		.button2:hover  {
+		background-color:#fff;
+		opacity: 1;	
+		}
+	
+		.button1:hover  {
+		background-color:#fff;
+		opacity: 1;
+		}
+	
+		.button2  {
+		background-color:#fff;
+	
+		box-shadow: 0 2px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+		}
+		.button1  {
+		background-color:#fff;
+	
+		box-shadow: 0 2px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+		}
+		
+	
+    /*   -------------------bovespa section -------------------  */
+    #container {
+		width: auto;
+		flex: 1 0 auto; 
+		padding-bottom: 20px;	
+	}
+	
+	#search {
+		width: auto;    /*    -----------largura do background dos inputs----------------*/
+		margin-top:-120px;
+		padding: 10px 0px 10px 20px;
+		background-color: #DBDBDB;	
+	}
+	
+	#error {
+		background-color: red;
+		color: yellow;
+		padding: 10px 0px 10px 20px;
+		display: none;
+	}
+	
+	.input-width {
+		width: 150px !important;
+	}
+	.input-width2{
+		width: 0px !important;
+	}
+	#wrapper {
+		display: flex;	
+		flex-direction: row;
+		margin-top: 30px;	
+	}
+	
+	.table {
+		text-align: center;
+	}
+	
+	.table-div {
+		padding: 10px 10px 10px 10px;
+		width: 35%;
+		height: 300px;	
+		border: 1px solid #000;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	
+	.column-chart {
+		position: center;
+		width: 65%;
+		height: 300px;
+		border: 1px solid #000;
+		margin-right:30px;
+		
+	}
+	
+	.line-chart {
+	
+		position: center;
+		width: 300px;	
+		height: 300px;	
+		border: 1px solid #000;
+		padding: 15px 0px 15px 0px;
+		margin: 20px 20px 20px 20px; /*20*/
 	}
 
+     /*          ----------------------------footer--------------------------            */
+
+
+    .footer {
+	   position:center;
+	   margin-right: auto;
+       margin-left: auto; /* 15px*/
+       padding: 30px 0;   
+       background-color: #fff;
+    }
+	
+}
+/* responsivo celular                          ---------------celular    767px------------*/
+
+@media(max-width: 767px){
+
+
+
+	/*home section*/
+	
+
+   .container{
+	
+	width: 767px;
+	position: left;
+	max-width: 767px;      /* -----------largura do container...tambem altera o NAV -------------*/
+	
+	background-image:var(--primary-color);
+	background-repeat:repeat;  /* a */
+	zoom:0;
+	box-sizing: border-box;
+	background-position:center;
+	margin:0;
+	margin-left:auto;
+	margin-right:auto;
+   }
+  
+
+   .home-section .container{
+	
+	zoom:0;
+	box-sizing: border-box;
+    background-position: center;
+    display:table-cell;
+    vertical-align: middle; 
+    margin:0;
+	margin-right: 5px;
+    margin-left: 5px;
+	margin-top:120px;
+  
+   }
+   .home-section  img{
+	position:center;
+    margin-left: 441px;
+    margin-top: 130px;
+  
+   }
+   .home-section{
+	
+	
+	
+	zoom: 0;
+	width: 81%;       /*   ---------- largura  do body -----------  */
+	display: block;
+	min-height: 100vh;
+	background-color:rgba(128, 128, 128, 0.13);
+	background-position: center;
+	background-size:cover;
+	background-repeat:no-repeat;    
+   }
+
+   .frase1 {
+	  text-align: center;
+	  font-size: 18px;
+	  font-style:initial;
+  
+   }
+  
+	
+	.header{
+		margin-left: 0px;  /*--posicao NAV--*/
+		
+		
+		width: 85%;            /* ------largura navBAR------------*/
+		left: 0;
+		top:0;
+		z-index: 99;
+		padding: 0 0px;
+	}
+	.header-main{
+		background-color:#ffffff;   /* altere a cor caso nao veja a largura do NAV */
+		display: flex;
+		justify-content: space-between;
+		align-items: left;
+		padding: 30px 0;       /*---- ALTURA NAVBAR-----*/
+		border-radius: 4px;
+	}
+
+	.header-main .logo{
+		position:left;
+		image-rendering:optimizeQuality;  /* new- tentando colocar logo a esquerda! */
+		align-items: left;
+		align-content:left ;
+	}
+
+	.header .logo{
+		position:left;
+	    image-rendering:optimizeQuality;
+		padding: 0 15px;
+	}
+	.header .logo a{
+		position:left;
+		font-size: 30px;
+		text-transform: capitalize;
+		color:  rgb(48, 165, 48);
+		font-weight: 600;
+	}
 	.header .menu-overlay.active{
 	visibility: visible;
 	opacity: 1;
     }
 	.header .nav-menu{
-		position: fixed;
-		right: -280px;
+		position: flex;
+		right: -290px;
 		visibility: hidden;
-		width: 280px;
+		width: 410px;
 		height: 100%;
 		top:0;
 		overflow-y: auto;
@@ -669,68 +1153,239 @@ a{
 	.header .open-nav-menu{
 		display: flex;
 	}
+	
+		
+		
+
+	p{
+		text-align: center;
+		position: center;
+	  }
+	  
+	  h1 {
+		text-align: center;
+		position: center;
+		color:var(--primary-color);
+	  }
+	  
+	               
+		
+	   
+	  p {
+		text-align: center;
+	  }
+	  
+	  .btn {
+		color: #fff;
+		background: var(--primary-color);
+		cursor: pointer;
+		border-radius: 2px;
+		font-size: 14px;
+		padding: 5px 12px;
+	  }
+	  
+	  .container .money-img {
+		 position: center;
+		 margin: center;
+		 margin-top: 20%;
+		align-content: center;
+		zoom: 0;
+		width: 120px;
+		
+	  }
+	
+	  .container-cv {
+		
+		margin-top: auto; /* -110*/
+		margin-left: auto; /*450px*/
+		position: center;
+		padding: 300px ;
+		
+		
+		
+	  }
+	
+	  
+	  .currency {
+	
+	   
+		padding: 40px 0;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	  }
+	  
+	  .currency select {
+		margin-left:5px;
+		 margin-right: 0px;
+		padding: 10px 0px 10px 10px;
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		appearance: none;
+		border: 2px solid #dedede;
+		font-size: 16px;
+		background: transparent;
+		background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%20000002%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
+		background-position: right 10px top 50%, 0, 0;
+		background-size: 12px auto, 100%;
+		background-repeat: no-repeat;
+	  }
+	  
+	  .currency input {
+		
+		margin-right:-20px;
+		border: 0;
+		background: transparent;
+		font-size: 20px;
+		text-align:center;
+	  }
+	  
+	  .swap-rate-container {
+		
+		margin-left: 13px;
+		margin-right: 33px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	  }
+	  
+	  .rate {
+		color: rgba(48,165,48);
+		font-size: 20px;
+		padding:  1 10px;
+	  }
+	  
+	  select:focus,
+	  input:focus,
+	  button:focus {
+		outline: 0;
+	  }
+	 /*--buttons--*/
+	
+	 
+    .button2:hover  {
+	background-color:#fff;
+	opacity: 1;	
+    }
+
+    .button1:hover  {
+	background-color:#fff;
+	opacity: 1;
+    }
+
+    .button2  {
+	background-color:#fff;
+
+	box-shadow: 0 2px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+    .button1  {
+	background-color:#fff;
+
+	box-shadow: 0 2px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+	
+	 /*                               --bovespa-section  celular                    -- 767px              */
 
 	#container {
+		
 		flex: 1 0 auto; 
 		padding-bottom: 20px;	
 	}
 	
 	#search {
-		margin-top:-120px;
-		padding: 10px 0px 10px 20px;
+		width: 595px;                   /* largura do background do input*/
+		
+		margin-top: auto;
+	   margin-left: -0%;
+	   margin-right: 0%;
+		padding: 10px 20px 10px 20px;
 		background-color: #DBDBDB;	
-	}
+	 }
+	
 	
 	#error {
 		background-color: red;
 		color: yellow;
 		padding: 10px 0px 10px 20px;
 		display: none;
-	}
+	 }
 	
 	.input-width {
-		width: 180px !important;
+
+		margin: 0%;
+		width: 150px !important;
+	 }
+	 .input-width2{              /* input 2  oculto , so funciona o enter no input 1 com o input 2!?bug */
+		border: 1px solid #DBDBDB;
+		background-color: #DBDBDB;
+		width: 0px !important;
+		opacity:0.65;
+		-moz-opacity: 0.65;
+		filter: alpha(opacity=65);
 	}
-	
+
 	#wrapper {
-		display: flex;	
-		flex-direction: row;
+		display:table-cell;	
+		flex-direction:row;
 		margin-top: 30px;	
 	}
 	
 	.table {
+		
 		text-align: center;
 	}
 	
 	.table-div {
+		position: center;
+		margin-top: 5%;
 		padding: 10px 10px 10px 10px;
-		width: 35%;
-		height: 300px;	
+		width: 138%;	
 		border: 1px solid #000;
-		margin-left: 20px;
-		margin-right: 20px;
+		
 	}
 	
 	.column-chart {
-		width: 65%;
+		margin-left: 25%;
+		
+		margin-top: 5%;
+		width: 100%;
 		height: 300px;
 		border: 1px solid #000;
-		margin-right: 20px;
+		
 	}
+	
+
 	
 	.line-chart {
-		width: 300px;	
+			
+		width: 100%;
+		
+		margin-left: 0%;
 		height: 300px;	
 		border: 1px solid #000;
-		padding: 10px 10px 10px 10px;
-		margin: 20px 20px 20px 20px;
+		padding: 15px 0px 15px 0px;
+		margin: 15px 20px 20px 95px;
 	}
-
 	
-}
-/* responsivo celular                          ---------------celular------------*/
+	
+		
+	
+	/*--fim-Bovespa-section--*/
 
-@media(max-width: 767px){
+    /* rodape*/
+	.footer {
+		position: center;  /*0*/
+		margin-right: auto;
+		margin-left: auto; /* 40px*/
+		padding: 30px 0;
+		background-color: #fff;
+	}
+   
+}
+ 
+/* responsivo celulares em GERAL                ---------------celulares em GERAL--420px------------*/
+
+@media(max-width: 420px){
 
 
 
@@ -738,9 +1393,9 @@ a{
 
    .container{
 	
-	width: auto;
+	width: 420px;
 	position: center;
-	max-width: 767px;
+	max-width: 420px;
 	
 	background-image:var(--primary-color);
 	background-repeat:repeat;  /* a */
@@ -773,10 +1428,10 @@ a{
    }
    .home-section{
 	
-	position:auto;
+	
 	
 	zoom: 0;
-	width: 102%;
+	width: 100%;       /*   ---------- largura  do body -----------  */
 	display: block;
 	min-height: 100vh;
 	background-color:rgba(128, 128, 128, 0.13);
@@ -796,18 +1451,18 @@ a{
 		margin-left: auto;
 		margin-right: auto;
 		position: center;
-		width: 102%;
+		width: 100%;            /* ------largura navBAR------------*/
 		left:0;
 		top:0;
 		z-index: 99;
 		padding: 0 0px;
 	}
 	.header-main{
-		background-color: #ffffff;
+		background-color:#ffffff;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		padding: 20px 0;
+		padding: 30px 0;       /*---- ALTURA NAVBAR-----*/
 		border-radius: 4px;
 	}
 
@@ -1033,18 +1688,24 @@ a{
 	box-shadow: 0 2px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     }
 	
-	 /*--bovespa-section-- celular              CRIAR O BOVESPA SECTION NAS OUTRAS OPCOES DE RESPONSIVIDADE*/
+	 /*                               --bovespa-section  celulares em geral-- 420px              */
 
 	#container {
+		
 		flex: 1 0 auto; 
 		padding-bottom: 20px;	
 	}
 	
 	#search {
+		width: 412px;                   /* largura do background do input*/
+		
 		margin-top: auto;
-		padding: 10px 0px 10px 20px;
+	   margin-left: -3%;
+	   margin-right: 0%;
+		padding: 10px 20px 10px 20px;
 		background-color: #DBDBDB;	
 	}
+	
 	
 	#error {
 		background-color: red;
@@ -1054,9 +1715,19 @@ a{
 	}
 	
 	.input-width {
-		width: 180px !important;
+
+		margin: 0%;
+		width: 135px !important;
 	}
-	
+	.input-width2{              /* input 2  oculto , so funciona o enter no input 1 com o input 2!?bug */
+		border: 1px transparent ;
+		background-color: #DBDBDB;
+		width: 0px !important;
+		opacity:0.65;
+		-moz-opacity: 0.65;
+		filter: alpha(opacity=65);
+	}
+
 	#wrapper {
 		display:table-cell;	
 		flex-direction:row;
@@ -1068,19 +1739,20 @@ a{
 		text-align: center;
 	}
 	
-	.table-div {
+	.table-div {                /* container 1 */
 		position: center;
 		margin-top: 5%;
 		padding: 10px 10px 10px 10px;
-		width: 115%;	
+		width: 100%;	
 		border: 1px solid #000;
 		
 	}
 	
-	.column-chart {
+	.column-chart { 
+		margin-left:18% ;          /* container 2 */
 		position: center;
 		margin-top: 5%;
-		width: 65%;
+		width: 75%;
 		height: 300px;
 		border: 1px solid #000;
 		
@@ -1088,35 +1760,31 @@ a{
 	
 
 	
-	.line-chart {
+	.line-chart { 	                            /* container 3 */
 		position: center;	
-		width: 100%;
-		margin-right:auto;
-		margin-left: auto;
+		width: 90%;
 		height: 300px;	
 		border: 1px solid #000;
 		padding: 15px 0px 15px 0px;
-		margin: 15px 20px 20px 5px;
+		margin: 15px 20px 20px 4px;
 	}
 	
 	
 		
-	}
+	
 	/*--fim-Bovespa-section--*/
 
     /* rodape*/
 	.footer {
 		position: center;  /*0*/
-		margin-right: auto;
+		margin-right: 15px;
 		margin-left: auto; /* 40px*/
 		padding: 30px 0;
-		background-color: #fff;
-	 
-	   }
-	 
-	  
-
+		background-color:#ffffff;
+	}
 	
+ 
+}	
 /* responsivo celular 360px                        ---------------celular 360px------------*/
 
 @media(max-width: 360px){
@@ -1129,8 +1797,8 @@ a{
 	
 	width: auto;
 	position: center;
-	max-width: 360px;
-	
+	max-width: 360px;     /*---         largura container  NAV     -----*/
+	overflow-x: hidden;
 	background-image:var(--primary-color);
 	background-repeat:repeat;  /* a */
 	zoom:0;
@@ -1141,8 +1809,10 @@ a{
 	margin-right: auto;
    }
   
+    
 
    .home-section .container{
+	width: 360px;
 	zoom:0;
 	box-sizing: border-box;
     background-position: center;
@@ -1160,12 +1830,12 @@ a{
     margin-top: 130px;
   
    }
-   .home-section{
+   .home-section{               
 	
-	position:auto;
+	
 	
 	zoom: 0;
-	width: 102%;
+	width: 100%;     /*-----aumentar/diminuir largura !-------*/
 	display: block;
 	min-height: 100vh;
 	background-color:rgba(128, 128, 128, 0.13);
@@ -1185,18 +1855,18 @@ a{
 		margin-left: auto;
 		margin-right: auto;
 		position: center;
-		width: 102%;
+		width: 100%;                       /*----- ajuste da logo e menu--------*/
 		left:0;
 		top:0;
 		z-index: 99;
-		padding: 0 0px;
+		padding: 20 20px 0px 0px;
 	}
 	.header-main{
 		background-color: #ffffff;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		padding: 20px 0;
+		padding: 30px 0;
 		border-radius: 4px;
 	}
 
@@ -1247,7 +1917,7 @@ a{
 	.header .menu > .menu-item-has-children > a{
 		display: flex;
 		justify-content: space-between;
-		align-items: center;
+		align-items:center;
 	}
 	.header .menu > .menu-item > a{
 		color: #ffffff;
@@ -1434,16 +2104,104 @@ a{
 	margin-right: 110px;
 	box-shadow: 0 2px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     }
+	
+	 /*                        ------------bovespa-section  celular -----------     360px*/
+
+	#container {
+	  
+		flex: 1 0 auto; 
+		padding-bottom: 20px;	
+	}
+	
+	#search {
+		width: 360px;           /*  aqui sim e o tamanho do background dos imputs*/
+		margin-top: auto;
+	   margin-left: -3%;
+	   margin-right: 2%;
+		padding: 10px 20px 10px 20px;
+		background-color: #DBDBDB;	
+	}
+	
+	#error {
+		background-color: red;
+		color: yellow;
+		padding: 10px 0px 10px 20px;
+		display: none;
+	}
+	
+	.input-width {
+
+		margin: 0%;
+		width: 150px !important;    /*---tamanho inputs-----*/
+	}
+	.input-width2{              /* input 2  oculto , so funciona o enter no input 1 com o input 2!?bug */
+		border: 1px solid #DBDBDB;
+		background-color: #DBDBDB;
+		width: 0px !important;
+		opacity:0.65;
+		-moz-opacity: 0.65;
+		filter: alpha(opacity=65);
+	}
+	
+	#wrapper {
+		display:table-cell;	
+		flex-direction:row;
+		margin-top: 30px;	
+	}
+	
+	.table {
 		
+		text-align: center;
+	}
+	
+	.table-div {
+		margin-left: 0%;
+		position: center;
+		margin-top: 5%;
+		padding: 10px 10px 10px 10px;
+		width: 100%;	                    /* tamanho container 1*/
+		border: 1px solid #000;
+		
+	}
+	
+	.column-chart {
+		margin-left: 8%;                        /* 2 */
+		position: center;
+		margin-top: 5%;
+		width: 85%;
+		height: 300px;
+		border: 1px solid #000;
+		
+	}
+	
+
+	
+	.line-chart {                      /*3*/
+		position: center;	
+		width: 90%;
+		margin-right:auto;
+		margin-left: auto;
+		height: 300px;	
+		border: 1px solid #000;
+		padding: 15px 0px 15px 0px;
+		margin: 15px 20px 20px -20px;
+	}
+	
+	/*--fim-Bovespa-section--*/
+	
+
+
     /* rodape*/
+
 	.footer {
+
 		position: center;  /*0*/
 		margin-right: auto;
-		margin-left: auto; /* 40px*/
-		padding: 30px 0;
+		margin-left:auto; /* 40px*/
+		padding:  30px 0;
 		background-color: #fff;
 	 
-	   }
+	}
 	 
 	  
 }
@@ -1459,7 +2217,7 @@ a{
 	
 	width: auto;
 	position: center;
-	max-width: 320px;
+	max-width: 320px;            /*-----tamanho container nav ------*/
 	
 	background-image:var(--primary-color);
 	background-repeat:repeat;  /* a */
@@ -1495,7 +2253,7 @@ a{
 	position:auto;
 	
 	zoom: 0;
-	width: 102%;
+	width: 105%;              /*----largura home----*/
 	display: block;
 	min-height: 100vh;
 	background-color:rgba(128, 128, 128, 0.13);
@@ -1515,7 +2273,7 @@ a{
 		margin-left: auto;
 		margin-right: auto;
 		position: center;
-		width: 102%;
+		width: 100%;       /*------largura NAV------*/
 		left:0;
 		top:0;
 		z-index: 99;
@@ -1526,7 +2284,7 @@ a{
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		padding: 20px 0;
+		padding: 20px 20;             /*------altura NAV------------*/
 		border-radius: 4px;
 	}
 
@@ -1766,33 +2524,106 @@ a{
 	margin-right: 110px;
 	box-shadow: 0 2px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     }
+	
+	
+	 /*--bovespa-section                                      celular --               320px*/
+
+	 #container {
+		flex: 1 0 auto; 
+		padding-bottom: 20px;	
+	}
+	
+	#search {
+		width: 330px;       /*    largura background dos inputs      */
+		margin-top: auto;
+	   margin-left: -3%;
+	   margin-right: 2%;
+		padding: 10px 20px 10px 20px;
+		background-color: #DBDBDB;	
+	}
+	
+	#error {
+		background-color: red;
+		color: yellow;
+		padding: 10px 0px 10px 20px;
+		display: none;
+	}
+	.input-width {             /*------largura inputs-----------*/
+
+		margin: 0%;
+		width: 140px !important;
+	}
+	.input-width2{              /* input 2  oculto , so funciona o enter no input 1 com o input 2!?bug */
+		border: 1px solid #DBDBDB;
+		background-color: #DBDBDB;
+		width: 0px !important;
+		opacity:0.65;
+		-moz-opacity: 0.65;
+		filter: alpha(opacity=65);
+	}
+	
+	
+	#wrapper {
+		display:table-cell;	
+		flex-direction:row;
+		margin-top: 30px;	
+	}
+	
+	.table {
 		
-    /* rodape*/
-	.footer {
-		position: center;  /*0*/
-		margin-right: auto;
-		margin-left: auto; /* 40px*/
-		padding: 30px 0;
-		background-color: #fff;
-	 
-	   }
-	 
-	  
-}
+		text-align: center;
+	}
+	
+	.table-div {
+		margin-left: 0%;
+		position: center;
+		margin-top: 5%;
+		padding: 10px 10px 10px 10px;
+		width: 95%;	        /*------largura container 1--------*/
+		border: 1px solid #000;
+		
+	}
+	
+	.column-chart {
+		margin-left: 10%;
+		position: center;
+		margin-top: 5%;
+		width: 75%;
+		height: 300px;
+		border: 1px solid #000;
+		
+	}
+	
+
+	
+	.line-chart {
+		margin-left:0%;
+		position: center;	
+		width: 100%;
+		margin-right:auto;
+		margin-left: auto;
+		height: 300px;	
+		border: 1px solid #000;
+		padding: 15px 0px 15px 0px;
+		margin: 15px 20px 20px -25px;
+	}
+	
+	
+		
+	
+	/*--fim-Bovespa-section--*/
+
+    /*--footer--*/
 
 
+        .footer {
+	    position:center;
+	    margin-right: auto;
+        margin-left: 45px; /* 15px*/
+        padding: 30px 0;   
+        background-color: #fff;
 
-  /*--footer--*/
-
-
-  .footer {
-	  position:center;
-	  margin-right: auto;
-   margin-left: auto; /* 15px*/
-   padding: 30px 0;   
-   background-color: #fff;
-
-  }
+          }
 
   .footer .social {
    text-align: center;
@@ -1820,8 +2651,9 @@ a{
   }
 
   .footer ul {
+   position: center;
    margin-top: 0;
-   padding:0;
+   padding:0 15px;
    list-style: none;
    font-size: 18px;
    line-height: 1.6;
@@ -1853,3 +2685,81 @@ a{
 	  font-size: 13px;
 	  color:#aaa;
   }
+	 
+	  
+}
+
+
+
+  /*--footer--*/
+
+
+.footer {
+	position:center;
+	margin-right: auto;
+    margin-left: auto; /* 15px*/
+    padding: 30px 0;   
+    background-color:#ffffff;
+
+}
+
+.footer .social {
+   text-align: center;
+   padding-bottom: 25px;
+   color: #4b4c4d;
+
+}
+.footer .social a {
+   font-size: 24px;
+   color: inherit;
+   border:1px solid #ccc;
+   width: 40px;
+   height: 40px;
+   line-height: 40px;
+   display: inline-block;
+   text-align: center;
+   border-radius: 50%;
+   margin: 0 8px;
+   opacity: 0.75;
+
+}
+.footer .social a:hover {
+	  opacity: 0.5;
+	  
+}
+
+.footer ul {
+   position: center;
+   margin-top: 0;
+   padding:0 15px;
+   list-style: none;
+   font-size: 18px;
+   line-height: 1.6;
+   margin-bottom: 0;
+   text-align:center
+
+}
+
+.footer ul li a {
+	  color: inherit;
+	  text-decoration: none;
+	  opacity: 0.8;
+
+}
+
+.footer ul li {
+	  display: inline-block;
+	  padding: 0 15px;
+}
+
+.footer ul li a:hover {
+	  opacity: 1;
+	  color:green
+}
+
+.footer .copyright {
+	  margin-top: 15px;
+	  text-align: center;
+	  font-size: 13px;
+	  color:#aaa;
+}
