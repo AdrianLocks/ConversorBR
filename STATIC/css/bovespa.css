@@ -27,7 +27,7 @@ body.hidden-scrolling{
 .home-section{
 	
       margin-top:7%;      /* espaco do NAVBAR */
-	  width: auto;
+	  width: 100%;
 	  display: block;
 	  min-height: 100vh;
 	  background-color:rgba(128, 128, 128, 0.13);
@@ -44,10 +44,10 @@ body.hidden-scrolling{
   
 
 .home-section .container{
-
+	position:flex;
+    width:100%;
     
-	margin-right: auto;
-    margin-left: auto;
+	
 	margin-top:120px;
   
 }
@@ -61,9 +61,8 @@ body.hidden-scrolling{
 
 .container{
 	
-	max-width: 1920px;
-	margin:auto;
-	margin-left:auto;
+	max-width: 100%;
+	
 	
 	
 }
@@ -627,8 +626,8 @@ a{
 
 	.container{
 	    
-		width: 1023px;
-		position: fixed;
+		width: 1023%;
+		position: flex;
 		max-width: 1023px;      /* -----------largura do container...tambem altera o NAV -------------*/
 		padding-bottom: 40px;
 	
@@ -688,19 +687,20 @@ a{
 	  
 		
 		.header{
-			position:fixed;
+			margin-top: 0%;
+			position:fixed;    /* fixa o nav */
 			margin-left: auto;
 			margin-right: auto;
 			
-			width: 90%;            /* ------largura navBAR------------*/
+			width: 100%;            /* ------largura navBAR------------*/
 			left: 0;
 			top:0;
 			z-index: 99;
 			padding: 0 ;
 		}
 		.header-main{
-			position:relative;
-			width: 106%;
+			position:relative;   /*-----*/
+			width: 100%;
 			background-color: #ffffff;
 			display: flex;
 			justify-content: space-between;
@@ -1011,9 +1011,9 @@ a{
     }
 	
 }
-/* responsivo celular                          ---------------celular    767px------------*/
+/* responsivo tablet                          ---------------tablet    712px------------*/
 
-@media(max-width: 767px){
+@media(max-width: 712px){
 
 
 
@@ -1022,9 +1022,9 @@ a{
 
    .container{
 	
-	width: 767px;
-	position: left;
-	max-width: 767px;      /* -----------largura do container...tambem altera o NAV -------------*/
+	width: 100%;
+	position: flex;
+	max-width: 100%;      /* -----------largura do container...tambem altera o NAV -------------*/
 	
 	background-image:var(--primary-color);
 	background-repeat:repeat;  /* a */
@@ -1059,9 +1059,9 @@ a{
    .home-section{
 	
 	
-	margin-top: 14%;
+	margin-top: 15%;
 	zoom: 0;
-	width: 107%;       /*   ---------- largura  do body/background -----------  */
+	width: 100%;       /*   ---------- largura  do body/background -----------  */
 	display: block;
 	min-height: 100vh;
 	background-color:rgba(128, 128, 128, 0.13);
@@ -1079,17 +1079,17 @@ a{
   
 	
 	.header{
+		position:fixed;
 		margin-left: 0px;  /*--posicao NAV--*/
-		
-		
-		width: 100%;            /* ------largura navBAR------------*/
+		width: 70%;            /* ------largura navBAR------------*/
 		left: 0;
 		top:0;
 		z-index: 99;
 		padding: 0 0px;
 	}
 	.header-main{
-		width: 770px;     /*--posicao do  menu hamburguer--*/
+		position: relative;
+		width: 688px;     /*--posicao do  menu hamburguer--*/
 		background-color:#ffffff;   /* altere a cor caso nao veja a largura do NAV */
 		display: flex;
 		justify-content: space-between;
@@ -1326,7 +1326,7 @@ a{
 	}
 	
 	#search {
-		width: 790px;                   /* largura do background do input*/
+		width: 687px;                   /* largura do background do input*/
 		
 		margin-top: 0px;
 	   margin-left: 0%;
@@ -1370,7 +1370,7 @@ a{
 	
 	.table-div {
 		position: center;
-		margin-left: 45%;
+		margin-left: 50%;
 		margin-top: 5%;
 		padding: 10px 10px 10px 10px;
 		width: 100%;	
@@ -1379,7 +1379,7 @@ a{
 	}
 	
 	.column-chart {
-		margin-left: 45%;
+		margin-left: 50%;
 		
 		margin-top: 5%;
 		width: 100%;
@@ -1394,7 +1394,7 @@ a{
 			
 		width: 100%;
 		
-		margin-left: 39%;
+		margin-left: 29%;
 		height: 300px;	
 		border: 1px solid #000;
 		padding: 15px 0px 15px 0px;
@@ -1427,9 +1427,9 @@ a{
 
    .container{
 	
-	width: 412px;
+	width: 100%;
 	position: center;
-	max-width: 412px;
+	max-width: 100%;
 	
 	background-image:var(--primary-color);
 	background-repeat:repeat;  /* a */
@@ -1466,7 +1466,7 @@ a{
 	
 	margin-top: 25%;  /*---important--*/
 	zoom: 0;
-	width: 100%;       /*   ---------- largura  do body -----------  */
+	width: 106%;       /*   ---------- largura  do body -----------  */
 	display: block;
 	min-height: 100vh;
 	background-color:rgba(128, 128, 128, 0.13);
@@ -1494,8 +1494,8 @@ a{
 	padding: 0 0px;
 	}
 	.header-main{
-		position:center;
-		width: 390px;                /*----distancia do menu hamburguer */
+		position:relative;
+		width: 412px;                /*----distancia do menu hamburguer */
 		background-color:#ffffff;
 		display: flex;
 		justify-content: space-between;
@@ -1738,7 +1738,7 @@ a{
 		width: 412px;                   /* largura do background do input*/
 		
 		margin-top:-20px;
-	   margin-left: -3%;
+	   margin-left: 0%;
 	   margin-right: 0%;
 		padding: 10px 20px 10px 20px;
 		background-color: #DBDBDB;	
@@ -1778,7 +1778,7 @@ a{
 	}
 	
 	.table-div { 
-		margin-left: 13%;               /* container 1 */
+		margin-left: 17%;               /* container 1 */
 		position: center;
 		margin-top: 5%;
 		padding: 10px 10px 10px 10px;
@@ -1788,7 +1788,7 @@ a{
 	}
 	
 	.column-chart { 
-		margin-left:25% ;          /* container 2 */
+		margin-left:30% ;          /* container 2 */
 		position: center;
 		margin-top: 6%;
 		width: 75%;
@@ -1800,7 +1800,7 @@ a{
 
 	
 	.line-chart { 
-		margin-left:1%;	                            /* container 3 */
+		margin-left:4%;	                            /* container 3 */
 		position: center;	
 		width: 100%;
 		height: 300px;	
@@ -1835,9 +1835,9 @@ a{
 
    .container{
 	
-	width: 360px;
-	position: center;
-	max-width: 420px;     /*---         largura container  NAV     -----*/
+	width: 100%;
+	position: relative;
+	max-width: 100%;     /*---         largura container  NAV     -----*/
 	
 	background-image:var(--primary-color);
 	background-repeat:repeat;  /* a */
@@ -1845,8 +1845,7 @@ a{
 	box-sizing: border-box;
 	background-position:center;
 	margin:0;
-	margin-left:auto;
-	margin-right: auto;
+	
    }
   
     
@@ -1855,7 +1854,7 @@ a{
 	width: 100%;
 	zoom:0;
 	box-sizing: border-box;
-    background-position: center;
+    background-position: relative;
     display:table-cell;
     vertical-align: middle; 
     margin:0;
@@ -1872,14 +1871,14 @@ a{
    }
    .home-section{               
 	
-	margin-top: 34%;
+	margin-top: 29%;
 	
 	zoom: 0;
-	width: 117%;     /*-----aumentar/diminuir largura !-------*/
+	width: 118%;     /*-----aumentar/diminuir largura !-------*/
 	display: block;
 	min-height: 100vh;
 	background-color:rgba(128, 128, 128, 0.13);
-	background-position: flex;
+	
 	background-size:cover;
 	background-repeat:no-repeat;
    }
@@ -1892,18 +1891,21 @@ a{
   
 	
 	.header{
-		position: fixed;
-		margin-left: auto;
-		margin-right: auto;
-		position: center;
-		width: 100%;                       /*----- ajuste da logo e menu--------*/
-		left:0;
-		top:0;
-		z-index: 99;
-		padding: 20 20px 0px 0px;
+
+   
+	margin-left:auto;
+	margin-right: auto;
+	position: fixed;
+    width: 100%;                       /*----- ajuste da logo e menu--------*/
+	left:0;
+	top:0;
+	z-index: 99;
+	padding: 20 20px 0px 0px;
 	}
 	.header-main{
-		width: 400px;   /* distancia do menu hamburguer*/
+		margin-left: -1%;
+		position: relative;
+		width: 404px;   /* distancia do menu hamburguer*/
 		background-color: #ffffff;
 		display: flex;
 		justify-content: space-between;
@@ -1950,7 +1952,7 @@ a{
 	}
 	.header .nav-menu.open{
 		visibility: visible;
-		right: -10px;
+		right: -30px;
 	}
 	.header .menu > .menu-item{
 		display: block;
@@ -2156,10 +2158,10 @@ a{
 	}
 	
 	#search {
-	width: 395px;           /*  aqui sim e o tamanho do background dos imputs*/
+	width: 400px;           /*  aqui sim e o tamanho do background dos imputs*/
 	margin-top: -10px;
 	margin-left: 0%;
-	margin-right: 2%;
+	margin-right: 0%;
 	padding: 10px 20px 10px 20px;
 	background-color: #DBDBDB;	
 	}
@@ -2197,7 +2199,7 @@ a{
 	}
 	
 	.table-div {
-		margin-left: 8%;
+		margin-left: 15%;
 		position: center;
 		margin-top: 5%;
 		padding: 10px 10px 10px 10px;
@@ -2207,7 +2209,7 @@ a{
 	}
 	
 	.column-chart {
-		margin-left: 8%;                        /* 2 */
+		margin-left: 15%;                        /* 2 */
 		position: center;
 		margin-top: 5%;
 		width: 100%;
@@ -2218,11 +2220,11 @@ a{
 	
 
 	
-	.line-chart {                      /*3*/
-		position: center;	
+	.line-chart { 
+		margin-left: 2%;                     /*3*/
+			
 		width: 100%;
-		margin-right:auto;
-		margin-left: auto;
+		
 		height: 300px;	
 		border: 1px solid #000;
 		padding: 15px 0px 15px 0px;
@@ -2309,10 +2311,10 @@ a{
   
 	
 	.header{
-		width: 100%;
+		
 		margin-left: auto;
 		margin-right: auto;
-		position: center;
+		position: fixed;
 		width: 100%;       /*------largura NAV------*/
 		left:0;
 		top:0;
@@ -2320,7 +2322,9 @@ a{
 		padding: 0 0px;
 	}
 	.header-main{
-		width: 120%;  /*  distancia do menu H */
+		position: relative;
+		margin-left: -11%;
+		width: 121%;  /*  distancia do menu H */
 		background-color: #ffffff;
 		display: flex;
 		justify-content: space-between;
@@ -2575,7 +2579,7 @@ a{
 	}
 	
 	#search {
-		width: 374px;       /*    largura background dos inputs      */
+		width: 378px;       /*    largura background dos inputs      */
 		margin-top: -15px;
 	   margin-left: -4%;
 	   margin-right: 2%;
@@ -2639,10 +2643,10 @@ a{
 	
 	.line-chart {
 		
-		position: center;	
+		
 		width: 100%;
 		margin-right:auto;
-		margin-left: -4%;
+		margin-left: -4.3%;
 		height: 300px;	
 		border: 1px solid #000;
 		padding: 15px 0px 15px 0px;
@@ -2737,9 +2741,9 @@ a{
 
 .footer {
 	width: 100%;
-	position:flex;
+	position:relative;
 	margin-right: auto;
-    margin-left: 0%; /* 15px*/
+    margin-left:auto; /* 15px*/
     padding: 30px 0;   
     background-color:#ffffff;
 
