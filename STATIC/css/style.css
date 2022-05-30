@@ -853,7 +853,7 @@ a{
 		
     /* rodape*/
     .footer {
-	margin-bottom: 40%;  /* important para 712px */
+	margin-bottom: 20%;  /* important para 712px */
 	position: relative;  /*0*/
 	margin-right: auto;
 	margin-left: auto; /* 40px*/
