@@ -1318,7 +1318,7 @@ a{
 	box-shadow: 0 2px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     }
 	
-	 /*                               --bovespa-section  celular                    -- 767px              */
+	 /*                               --bovespa-section  Tablets                    -- 712px              */
 
 	#container {
 		
@@ -1409,7 +1409,7 @@ a{
 
     /* rodape*/
 	.footer {
-		margin-bottom: 40%;  /* important para 712px , margin do fim para o rodape aparecer!*/
+		margin-bottom: 20%;  /* important para 712px , margin do fim para o rodape aparecer!*/
 		position: center;  /*0*/
 		margin-right: auto;
 		margin-left: auto; /* 40px*/
